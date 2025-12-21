@@ -101,6 +101,48 @@
 
   <a class="back" href="entreprises.html">← Retour aux entreprises</a>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  const SUPABASE_URL = "COLLE_ICI_TON_PROJECT_URL";
+  const SUPABASE_KEY = "COLLE_ICI_TA_ANON_KEY";
+
+  const supabase = supabaseJs.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+
+  const companyId = 1; // Orange CI
+
+  async function loadReviews() {
+    const { data, error } = await supabase
+      .from("reviews")
+      .select("*")
+      .eq("company_id", companyId)
+      .order("created_at", { ascending: false });
+
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    const container = document.getElementById("reviews");
+    container.innerHTML = "";
+
+    data.forEach(review => {
+      const div = document.createElement("div");
+      div.className = "review";
+      div.innerHTML = `
+        <div class="author">${review.author}</div>
+        <p>⭐ ${review.rating} / 5</p>
+        <p>${review.content}</p>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  loadReviews();
+</script>
 
 </body>
 </html>
