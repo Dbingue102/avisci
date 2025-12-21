@@ -54,6 +54,10 @@
 
 <main>
   <h2>Avis des clients</h2>
+<button onclick="document.getElementById('form-avis').style.display='block'"
+  style="margin-bottom:20px;padding:12px 20px;background:#0a7cff;color:white;border:none;border-radius:6px;cursor:pointer;">
+  ✍️ Écrire un avis
+</button>
 
   <div class="review">
     <div class="author">Kouamé A.</div>
@@ -69,6 +73,31 @@
     <div class="author">Yao K.</div>
     <p>Application Orange Money très pratique pour les paiements.</p>
   </div>
+<div id="form-avis" style="display:none;margin-top:30px;background:white;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+  <h3>Votre avis</h3>
+
+  <label>Votre nom</label><br/>
+  <input type="text" placeholder="Ex : Jean Koffi"
+    style="width:100%;padding:10px;margin-bottom:10px;"><br/>
+
+  <label>Note</label><br/>
+  <select style="width:100%;padding:10px;margin-bottom:10px;">
+    <option>⭐⭐⭐⭐⭐ – Excellent</option>
+    <option>⭐⭐⭐⭐ – Bon</option>
+    <option>⭐⭐⭐ – Moyen</option>
+    <option>⭐⭐ – Mauvais</option>
+    <option>⭐ – Très mauvais</option>
+  </select>
+
+  <label>Votre expérience</label><br/>
+  <textarea rows="4" placeholder="Décrivez votre expérience..."
+    style="width:100%;padding:10px;margin-bottom:10px;"></textarea>
+
+  <button onclick="alert('Merci pour votre avis ! (fonctionnalité en cours)')"
+    style="padding:12px 20px;background:#0a7cff;color:white;border:none;border-radius:6px;cursor:pointer;">
+    Publier l’avis
+  </button>
+</div>
 
   <a class="back" href="entreprises.html">← Retour aux entreprises</a>
 </main>
