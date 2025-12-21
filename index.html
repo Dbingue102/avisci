@@ -1,125 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AvisCI – Avis clients en Côte d’Ivoire</title>
-  <style>
-   <style>
-:root {
-  --primary: #0a7cff;
-  --dark: #1e293b;
-  --light: #f8fafc;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--light);
-  color: var(--dark);
-}
-
-header {
-<p><a href="login.html" style="color:white;">Connexion</a></p>
- background: linear-gradient(135deg, #0a7cff, #004aad);
-  color: white;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-main {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.search-box {
-  display: flex;
-  gap: 10px;
-  margin-top: 2rem;
-}
-
-input {
-  flex: 1;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 14px 24px;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-.card {
-  background: white;
-  padding: 2rem;
-  margin-top: 3rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 14px;
-  color: #64748b;
-}
-
-@media (max-width: 600px) {
-  .search-box {
-    flex-direction: column;
-  }
-}
-</style>
-
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>AvisCI</h1>
-  <p>Les avis de confiance en Côte d’Ivoire</p>
-</header>
-
-<main>
-  <h2>Trouvez une entreprise</h2>
-  <div class="search-box">
-    <input type="text" placeholder="Nom de l’entreprise (ex : Orange CI)" />
-    <a href="entreprises.html">
-  <button>Voir les entreprises</button>
-</a>
-
-  </div>
-
-  <div class="card">
-    <h3>Pourquoi AvisCI ?</h3>
-    <p>
-      AvisCI est une plateforme moderne permettant aux consommateurs ivoiriens
-      de partager leurs expériences avec les entreprises locales en toute
-      transparence et sécurité.
-    </p>
-  </div>
-</main>
-
-<footer>
-  © 2025 AvisCI – Tous droits réservés
-</footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AvisCI - Avis d'entreprises en Côte d'Ivoire | La plateforme de confiance</title>
+    <meta name="description" content="Trouvez les meilleures entreprises en Côte d'Ivoire grâce aux avis authentiques de notre communauté. Restaurants, banques, hôtels et plus encore." />
+    <meta name="keywords" content="avis entreprises, Côte d'Ivoire, notation, Abidjan, restaurants, banques, hôtels" />
+    <meta name="author" content="AvisCI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://avisci.ci" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AvisCI - Avis d'entreprises en Côte d'Ivoire" />
+    <meta property="og:description" content="Trouvez les meilleures entreprises en Côte d'Ivoire grâce aux avis authentiques de notre communauté." />
+    <meta property="og:site_name" content="AvisCI" />
+    <meta property="og:locale" content="fr_CI" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AvisCI - Avis d'entreprises en Côte d'Ivoire" />
+    <meta name="twitter:description" content="Trouvez les meilleures entreprises en Côte d'Ivoire grâce aux avis authentiques." />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
