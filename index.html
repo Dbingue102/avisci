@@ -5,58 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AvisCI – Avis clients en Côte d’Ivoire</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #222;
-    }
-    header {
-      background: #0a7cff;
-      color: white;
-      padding: 1.2rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .search-box {
-      display: flex;
-      gap: 10px;
-      margin-top: 2rem;
-    }
-    input {
-      flex: 1;
-      padding: 12px;
-      font-size: 16px;
-    }
-    button {
-      padding: 12px 20px;
-      background: #0a7cff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 14px;
-      color: #666;
-    }
-    @media (max-width: 600px) {
-      .search-box {
-        flex-direction: column;
-      }
-    }
+   <style>
+:root {
+  --primary: #0a7cff;
+  --dark: #1e293b;
+  --light: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+header {
+  background: linear-gradient(135deg, #0a7cff, #004aad);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 14px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 14px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+}
+</style>
+
   </style>
 </head>
 <body>
